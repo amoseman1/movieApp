@@ -3,3 +3,6 @@ const movieRoutes = require("../../controllers/movieController");
 
 router.route("/")
     .post(movieRoutes.create)
+
+module.exports = router;
+
