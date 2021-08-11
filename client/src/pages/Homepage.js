@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import API from '../utils/API';
 import MovieCard from '../components/MovieCard/MovieCard'
-import SearchBar from '../components/SearchBar'
+import SearchBar from '../components/SearchBar/SearchBar'
 
 // import Button from 'react-bootstrap/Button'
 
@@ -36,6 +36,7 @@ export default function Homepage() {
                     return (
                         <MovieCard
                             key={data.id}
+                            image={data.image}
                             description={data.description}
                             title={data.title}
                             price={data.price}

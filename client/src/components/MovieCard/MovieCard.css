@@ -1,0 +1,15 @@
+#itemCard {
+  width: 500px;
+  height: 200px;
+  justify-content: flex;
+  float: left;
+}
+
+#itemImage {
+  width: 100px;
+  height: 100px;
+  display: block;
+  margin: auto;
+  border-style: solid white;
+  padding: 10px;
+}
