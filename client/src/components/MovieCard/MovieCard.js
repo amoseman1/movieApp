@@ -29,10 +29,11 @@ export default function MovieCard(props) {
                 <Button id="cartButton" onClick={addtoCart}>Add to Cart</Button>
 
                 <Modal show={showModal} onHide={toggleModal}>
+
                     <Modal.Header closeButton>
-                        <Modal.Title>{props.title}</Modal.Title>
+                        <Modal.Title id="modalTitle">{props.title}</Modal.Title>
                     </Modal.Header>
-                    <Modal.Body>{props.description}</Modal.Body>
+                    <Modal.Body id="modalBody">{props.description}</Modal.Body>
                     <Modal.Footer>
                         <Button variant="secondary" onClick={toggleModal}>
                             Close
