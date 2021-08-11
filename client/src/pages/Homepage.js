@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import API from '../utils/API';
 import MovieCard from '../components/MovieCard/MovieCard'
+import SearchBar from '../components/SearchBar'
+
 // import Button from 'react-bootstrap/Button'
 
 export default function Homepage() {
@@ -26,7 +28,7 @@ export default function Homepage() {
 
     return (
         <>
-
+            <SearchBar />
             <div>{console.log(data)}
 
                 {data.map(data => {
@@ -34,9 +36,9 @@ export default function Homepage() {
                     return (
                         <MovieCard
                             key={data.id}
-                            poster={data.poster}
+                            description={data.description}
                             title={data.title}
-                            year={data.price}
+                            price={data.price}
                         />
                     )
                 })
