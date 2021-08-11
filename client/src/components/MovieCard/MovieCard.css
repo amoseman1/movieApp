@@ -1,15 +1,41 @@
 #itemCard {
-  width: 500px;
-  height: 200px;
-  justify-content: flex;
+  text-align: center;
+  width: 300px;
+  height: 400px;
+  margin: 15px;
   float: left;
+  padding: 3px;
+  background: rgb(255, 255, 255);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.08), 0 0 6px rgba(0, 0, 0, 0.05);
+  transition: 0.3s transform cubic-bezier(0.155, 1.105, 0.295, 1.12),
+    0.3s box-shadow,
+    0.3s -webkit-transform cubic-bezier(0.155, 1.105, 0.295, 1.12);
+  /* padding: 14px 80px 18px 36px; */
+  cursor: pointer;
+}
+
+#itemCard:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.06);
 }
 
 #itemImage {
-  width: 100px;
-  height: 100px;
+  width: 120px;
+  height: 120px;
   display: block;
   margin: auto;
   border-style: solid white;
   padding: 10px;
+}
+
+#description {
+  word-wrap: break-word;
+}
+
+#cartButton {
+  margin: auto;
+  width: 150px;
+  background-color: rgb(250, 253, 212);
+  color: black;
+  border-color: rgb(161, 161, 161);
 }
